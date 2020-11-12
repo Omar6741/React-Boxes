@@ -25,3 +25,5 @@ function NewBoxForm() {
 
     </form>
 }
+
+export default NewBoxForm

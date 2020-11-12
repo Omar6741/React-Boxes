@@ -1,13 +1,14 @@
 
 import React from 'react';
-import BoxList from './BoxList.js';
-import removeItem from './BoxList.js';
+
 
 function Box(props) {
 
+  function handleRemove() {
+        removeItem(props.id);  
+    }
 
 
-//Needs work
   return (
     <div>
       <div
@@ -18,7 +19,7 @@ function Box(props) {
         backgroundColor: `${props.backgroundColor}` 
       }}         
       />
-      <button onClick={() => removeItem()}>X</button>
+      <button>X</button>
     </div> 
   )
 
@@ -27,5 +28,10 @@ function Box(props) {
 Box.defaultProps = {
     height: 5,
     width: 5,
-    backgroundColor: "White"
+    backgroundColor: "White",
+    id: "0",
+    remov
+
 };
+
+export default Box
