@@ -8,18 +8,24 @@ function Box(props) {
 
 
 //Needs work
-    return <div> 
-        height={props.height} 
-        width = {props.width} 
-        backgroundColor = {props.backgroundColor} 
-        onClick={() => removeItem()}           
-        </div>
-
+  return (
+    <div>
+      <div
+      className="box"
+      style={{
+        height: `${props.height}px`, 
+        width: `${props.width}px`, 
+        backgroundColor: `${props.backgroundColor}` 
+      }}         
+      />
+      <button onClick={() => removeItem()}>X</button>
+    </div> 
+  )
 
 }
 
 Box.defaultProps = {
-    height,
-    width,
-    backgroundColor
+    height: 5,
+    width: 5,
+    backgroundColor: "White"
 };
