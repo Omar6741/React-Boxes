@@ -6,19 +6,16 @@ import { v4 as uuid } from 'uuid';
 function BoxList(){
 
     const [items, setItems] = useState([]);
-    const initialState = {height: "", width:"", backgroundColor:""};
+    // const initialState = {height: "", width:"", backgroundColor:""};
 
-    setMakeBox = Box(initialState);
+    // setMakeBox = Box(initialState);
 
     function renderItems(items) {
         return (
             <ul>
-              {items.map(item => (
-                  <li key={item.id}>
-                    {"height"}: {item.height}, 
-                    {"width"}: {item.width}, 
-                    {"color"}: {item.backgroundColor}
-                  </li>
+              <li>
+              {items.map(item => ({"height": {item.height}, "width": {item.width}, "color": {item.backgroundColor}}
+              </li>
               ))}
             </ul>
         );
