@@ -1,7 +1,7 @@
 
 //to be changed as things develop.
 import React from "react";
-import NameForm from "./NameForm";
+import BoxList from "./BoxList";
 
 const App = () => (
   <div>
