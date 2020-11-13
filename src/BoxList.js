@@ -15,8 +15,8 @@ function BoxList(){
     }
 
     /** add box with given { id, width, height, backgroundColor } */
-  function add(newItem) {
-    setBoxes(items => [...items, newItem]);
+  function addItem(newItem) {
+    setItems(items => [...items, newItem]);
   }
 
       function removeItem({id}) {

@@ -1,5 +1,6 @@
 
 import React from 'react';
+import removeItem from './BoxList'
 
 
 function Box(props) {
@@ -29,8 +30,8 @@ Box.defaultProps = {
     height: 5,
     width: 5,
     backgroundColor: "White",
-    id: "0",
-    remov
+    id: "",
+    removeItem
 
 };
 
